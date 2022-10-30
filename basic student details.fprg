@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rushy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 08:59:50 AM"/>
+        <attribute name="created" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA4OjQ5OjM5IEFNOzI1ODQ="/>
+        <attribute name="edited" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA4OjU5OjUwIEFNOzE7MjY4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <output expression="&quot;enter your roll number&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;enter your address&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="d" type="String" array="False" size=""/>
+            <output expression="&quot;enter your blood group&quot;" newline="True"/>
+            <input variable="d"/>
+            <declare name="e" type="String" array="False" size=""/>
+            <output expression="&quot;enter your assigned department&quot;" newline="True"/>
+            <input variable="e"/>
+            <output expression="&quot;Your name is&quot; &amp; b &amp;&#13;&#10;&quot;Your roll number is&quot; &amp; a &amp;&#13;&#10;&quot;You live in&quot; &amp; c &amp;&#13;&#10;&quot;Your blood group is&quot; &amp; d &amp;&#13;&#10;&quot;Your assigned department is&quot; &amp; e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

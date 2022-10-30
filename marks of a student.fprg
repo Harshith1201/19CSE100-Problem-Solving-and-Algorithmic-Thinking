@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rushy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 09:31:30 AM"/>
+        <attribute name="created" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA4OjQ5OjM5IEFNOzI1ODQ="/>
+        <attribute name="edited" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA5OjAzOjQ1IEFNOzE7UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA4OjQ5OjM5IEFNO2Jhc2ljIHN0dWRlbnQgZGV0YWlscy5mcHJnOzc5NTQ="/>
+        <attribute name="edited" value="UnVzaHk7UlVTSFlFTkRSQTsyMDIyLTEwLTMwOzA5OjMxOjMwIEFNOzI7MjY3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <output expression="&quot;enter your roll number&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="String" array="False" size=""/>
+            <output expression="&quot;enter your address&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="d" type="String" array="False" size=""/>
+            <output expression="&quot;enter your blood group&quot;" newline="True"/>
+            <input variable="d"/>
+            <declare name="e" type="String" array="False" size=""/>
+            <output expression="&quot;enter your assigned department&quot;" newline="True"/>
+            <input variable="e"/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your semester&quot;" newline="True"/>
+            <input variable="f"/>
+            <declare name="g" type="String" array="False" size=""/>
+            <output expression="&quot;enter your subject code 1&quot;" newline="True"/>
+            <input variable="g"/>
+            <declare name="h" type="String" array="False" size=""/>
+            <output expression="&quot;enter your subject code 2&quot;" newline="True"/>
+            <input variable="h"/>
+            <declare name="i" type="Real" array="False" size=""/>
+            <output expression="&quot;enter your &quot; &amp; g &amp;&quot; marks&quot;" newline="True"/>
+            <input variable="i"/>
+            <declare name="j" type="Real" array="False" size=""/>
+            <output expression="&quot;enter your &quot; &amp; h &amp; &quot; marks&quot;" newline="True"/>
+            <input variable="j"/>
+            <declare name="k" type="Real" array="False" size=""/>
+            <assign variable="k" expression="i+j"/>
+            <declare name="l" type="Real" array="False" size=""/>
+            <assign variable="l" expression="k/2"/>
+            <output expression="&quot;Your name is &quot; &amp; b &amp;&#13;&#10;&quot; Your roll number is &quot; &amp; a &amp;&#13;&#10;&quot; You live in &quot; &amp; c &amp;&#13;&#10;&quot; Your blood group is &quot; &amp; d &amp;&#13;&#10;&quot; Your assigned department is &quot; &amp; e &amp;&#13;&#10;&quot; Your semester is &quot; &amp; f &amp;&#13;&#10;&quot; Your subject code 1 is &quot; &amp; g &amp;&#13;&#10;&quot; Your subject code 2 is &quot; &amp; f &amp;&#13;&#10;&quot; Your&quot; &amp; g &amp; &quot;marks are &quot; &amp; i &amp;&#13;&#10;&quot; Your&quot; &amp; h &amp; &quot;marks are &quot;  &amp; j &amp;&#13;&#10;&quot; Your total marks are &quot; &amp; k &amp;&#13;&#10;&quot; Your average marks are &quot; &amp; l" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
