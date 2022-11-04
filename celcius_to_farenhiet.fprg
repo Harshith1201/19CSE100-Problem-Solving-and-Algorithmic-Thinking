@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22027"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:58:31 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzA5OjA4OjE4IEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzEwOjU4OjMxIEFNOzQ7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;enter temperature in celcius&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="Farenheit= 9/5(celcius)+32 "/>
+            <assign variable="b" expression="1.8*a+32"/>
+            <output expression="&quot;your given temperature in ferenhiet is &quot; &amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

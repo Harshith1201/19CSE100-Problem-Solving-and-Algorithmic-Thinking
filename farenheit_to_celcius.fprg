@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22027"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:00:41 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzA5OjI4OjE0IEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzExOjAwOjQxIEFNOzI7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter temperature in farenheit&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="celcius(b)= farenheit(a)-32/1.8"/>
+            <assign variable="b" expression="(a-32)/1.8"/>
+            <output expression="&quot;tour given temperature in celcius is &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

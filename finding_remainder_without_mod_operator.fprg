@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22027"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:58:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzEwOjQ2OjQ5IEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTA0OzEwOjU4OjA0IEFNOzM7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the dividend&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the divisor&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="finding quotient(c)"/>
+            <assign variable="c" expression="a/b"/>
+            <comment text="remainder(d) = dividend(a)-divisor(b)*quotient(c)"/>
+            <assign variable="d" expression="a-(b*c)"/>
+            <output expression="&quot;Remainder is&quot; &amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
