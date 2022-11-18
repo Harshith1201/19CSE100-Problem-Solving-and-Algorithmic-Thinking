@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22027"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:37:24 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTE4OzA4OjU4OjMyIEFNOzMwNzI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAyNzsyMDIyMjNNQVlDMDA2NDsyMDIyLTExLTE4OzA5OjM3OjI0IEFNOzE7MzE3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <declare name="accno, balance, money, pin, avlbalance" type="Real" array="False" size=""/>
+            <output expression="&quot;enter account number&quot;" newline="True"/>
+            <input variable="accno"/>
+            <if expression="accno==1234">
+                <then>
+                    <assign variable="balance" expression="1000"/>
+                    <output expression="&quot;welcome, please provide your pin&quot;" newline="True"/>
+                    <input variable="pin"/>
+                    <if expression="pin==1001">
+                        <then>
+                            <output expression="&quot;please enter the amount you want to withdraw&quot;" newline="True"/>
+                            <input variable="money"/>
+                            <if expression="money&lt;=balance">
+                                <then>
+                                    <output expression="&quot;please collect the cash&quot;" newline="True"/>
+                                    <assign variable="avlbalance" expression="balance-money"/>
+                                    <output expression="&quot;available balance is&quot; &amp;avlbalance" newline="True"/>
+                                    <if expression="avlbalance&lt;100">
+                                        <then>
+                                            <output expression="&quot;please add money to maintain minimum balance&quot;" newline="True"/>
+                                            <output expression="&quot;THANKYOU&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;THANKYOU&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;insufficient balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Invalid pin&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;invalid acc no&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
