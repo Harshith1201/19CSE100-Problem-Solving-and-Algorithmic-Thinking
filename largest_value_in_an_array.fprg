@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="harsh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:37:08 AM"/>
+        <attribute name="created" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMToxOTowOSBBTTsyNDA1"/>
+        <attribute name="edited" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMTozNzowOCBBTTszOzI1MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="5"/>
+            <declare name="b, c" type="Integer" array="False" size=""/>
+            <comment text="taking values into the array"/>
+            <for variable="b" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter values of array block&quot; &amp;b+1" newline="True"/>
+                <input variable="c"/>
+                <assign variable="a[b]" expression="c"/>
+            </for>
+            <declare name="max" type="Integer" array="False" size=""/>
+            <assign variable="max" expression="a[0]"/>
+            <comment text="assuming a[0] is max value"/>
+            <for variable="b" start="1" end="4" direction="inc" step="1">
+                <if expression="a[b]&gt;max">
+                    <then>
+                        <comment text="max value is assigned the number greater than the number in preceeding array block"/>
+                        <assign variable="max" expression="a[b]"/>
+                    </then>
+                    <else>
+                        <comment text="the false loop restarts the loop by moving to next number"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;the largest number in the array is&quot; &amp;max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
