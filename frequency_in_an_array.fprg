@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="harsh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:40:18 PM"/>
+        <attribute name="created" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMDoxODo1NSBQTTsyNDE5"/>
+        <attribute name="edited" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMDo0MDoxOCBQTTsyOzI1MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <declare name="inputval, freqval, x, freq" type="Integer" array="False" size=""/>
+            <comment text="Taking values into array"/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter value&quot; &amp;x+1" newline="True"/>
+                <input variable="inputval"/>
+                <assign variable="a[x]" expression="inputval"/>
+            </for>
+            <output expression="&quot;Enter the value for which you want to find frequency&quot;" newline="True"/>
+            <input variable="freqval"/>
+            <assign variable="freq" expression="0"/>
+            <comment text="initially the frequency is set to zero in the if loop if the value is equa to the value in the array block frequency increases by 1 "/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <if expression="a[x]=freqval">
+                    <then>
+                        <assign variable="freq" expression="freq+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;the frequency of&quot; &amp; freqval &amp; &quot;in the array is&quot; &amp;freq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
