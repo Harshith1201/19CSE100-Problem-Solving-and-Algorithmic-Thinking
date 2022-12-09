@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="harsh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:17:42 AM"/>
+        <attribute name="created" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMDoxMTozMCBBTTsyMzkw"/>
+        <attribute name="edited" value="aGFyc2g7SEFSU0hJVEg7MjAyMi0xMi0wOTsxMToxNzo0MiBBTTs0OzI1MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, totalmarks, avgmarks" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number of students&quot;" newline="True"/>
+            <comment text="the size of the array is the number of students"/>
+            <input variable="n"/>
+            <declare name="students" type="Integer" array="True" size="n"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <for variable="a" start="0" end="n-1" direction="inc" step="1">
+                <declare name="rollno" type="Integer" array="True" size="n"/>
+                <output expression="&quot;enter your roll number&quot;" newline="True"/>
+                <input variable="rollno[a]"/>
+                <declare name="subject" type="Integer" array="True" size="5"/>
+                <declare name="m" type="Integer" array="False" size=""/>
+                <comment text="number of subjects is 5"/>
+                <for variable="m" start="0" end="4" direction="inc" step="1">
+                    <declare name="submarks" type="Integer" array="False" size=""/>
+                    <output expression="&quot;enter your subject&quot; &amp;m+1&amp; &quot;marks&quot;" newline="True"/>
+                    <input variable="submarks"/>
+                    <assign variable="subject[m]" expression="submarks"/>
+                </for>
+                <assign variable="totalmarks" expression="subject[0]+subject[1]+subject[2]+subject[3]+subject[4]"/>
+                <output expression="&quot;your total marks are&quot; &amp;totalmarks" newline="True"/>
+                <assign variable="avgmarks" expression="totalmarks/5"/>
+                <output expression="&quot;average marks are&quot; &amp;avgmarks" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
